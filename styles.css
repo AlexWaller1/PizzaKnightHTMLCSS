@@ -13,6 +13,11 @@
     font-family: sans-serif;
 }
 
+#main-link-div{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
 body{
     background: rgb(134, 56, 56)
 }
