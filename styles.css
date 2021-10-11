@@ -121,6 +121,22 @@
     
 }
 
+#shops-1-image{
+    border: 3px solid rgb(199, 181, 181);
+}
+
+#shops-2-image{
+    border: 3px solid rgb(199, 181, 181);
+}
+
+#shops-3-image{
+    border: 3px solid rgb(199, 181, 181);
+}
+
+#shops-4-image{
+    border: 3px solid rgb(199, 181, 181);
+}
+
 body{
     background: rgb(134, 56, 56)
 }
