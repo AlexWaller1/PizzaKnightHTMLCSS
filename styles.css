@@ -6,6 +6,7 @@
 #first-div{
     color:rgb(199, 181, 181);
     font-family: sans-serif;
+    font-size: x-large;
 }
 
 #footer-1{
@@ -50,13 +51,13 @@
 #second-about-div{
     color: rgb(199, 181, 181);
     font-family: sans-serif;
-    font-size: large;
+    font-size: x-large;
 }
 
 #shops-intro{
     color: rgb(199, 181, 181);
     font-family: sans-serif;
-    font-size: large;
+    font-size: x-large;
 }
 
 #shops-links-div{
