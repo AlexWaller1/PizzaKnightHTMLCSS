@@ -16,6 +16,7 @@
 #main-link-div{
     color: rgb(199, 181, 181);
     font-family: sans-serif;
+    font-size: large;
 }
 
 #about-header{
@@ -38,6 +39,60 @@
 #shops-header{
     color: rgb(199, 181, 181);
     font-family: sans-serif;
+}
+
+#about-links-div{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#second-about-div{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#shops-intro{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#shops-links-div{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#shops-footer{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#shops-1-header{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#shops-2-header{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#shops-3-header{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#shops-4-header{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
 }
 
 body{
