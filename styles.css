@@ -18,6 +18,24 @@
     font-family: sans-serif;
 }
 
+#about-header{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#about-footer{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+#first-about-paragraph{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
 body{
     background: rgb(134, 56, 56)
 }
+
