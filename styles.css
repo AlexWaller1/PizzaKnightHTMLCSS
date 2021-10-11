@@ -185,6 +185,23 @@
     font-size: large;
 }
 
+#pizza-art-header{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#pizza-art-link-div{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#pizza-art-div-1{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
 body{
     background: rgb(134, 56, 56)
 }
