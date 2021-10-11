@@ -156,6 +156,29 @@
     font-size: large;
 }
 
+#newsletter-header{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#newsletter-link-div{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#newsletter-div-1{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+#newsletter-footer{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
 body{
     background: rgb(134, 56, 56)
 }
