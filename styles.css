@@ -332,6 +332,18 @@
     border: 7px solid rgb(199, 181, 181);
 }
 
+#contact-div-1{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+#contact-footer{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
 body{
     background: rgb(134, 56, 56)
 }
