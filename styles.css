@@ -374,6 +374,12 @@
     font-size: large;
 }
 
+#stories-form-div{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
 body{
     background: rgb(134, 56, 56)
 }
