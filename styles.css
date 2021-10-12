@@ -317,6 +317,21 @@
     font-family: sans-serif;
 }
 
+#contact-header{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#contact-links-div{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#pizza-contact-image-1{
+    border: 7px solid rgb(199, 181, 181);
+}
+
 body{
     background: rgb(134, 56, 56)
 }
