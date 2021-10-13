@@ -404,6 +404,37 @@
     color:yellow;
 }
 
+#team-header{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#team-links-div{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#team-div-1{
+    color:rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+#team-header-2{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#team-member-header-1{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#team-image-1{
+    border: 9px solid rgb(199, 181, 181);
+}
+
 body{
     background: rgb(134, 56, 56)
 }
