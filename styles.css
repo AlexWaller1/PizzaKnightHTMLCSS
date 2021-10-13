@@ -392,6 +392,14 @@
     font-size: large;
 }
 
+#about-image-1{
+    border:9px solid rgb(199, 181, 181);
+}
+
+#pizza-image-1{
+    border: 9px solid rgb(199, 181, 181);
+}
+
 body{
     background: rgb(134, 56, 56)
 }
