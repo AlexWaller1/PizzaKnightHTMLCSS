@@ -123,19 +123,19 @@
 }
 
 #shops-1-image{
-    border: 3px solid rgb(199, 181, 181);
+    border: 5px solid rgb(199, 181, 181);
 }
 
 #shops-2-image{
-    border: 3px solid rgb(199, 181, 181);
+    border: 5px solid rgb(199, 181, 181);
 }
 
 #shops-3-image{
-    border: 3px solid rgb(199, 181, 181);
+    border: 5px solid rgb(199, 181, 181);
 }
 
 #shops-4-image{
-    border: 3px solid rgb(199, 181, 181);
+    border: 5px solid rgb(199, 181, 181);
 }
 
 #homemade-links-div{
@@ -450,6 +450,20 @@
 }
 
 #shops-5-image{
+    border: 5px solid rgb(199, 181, 181);
+}
+
+#shops-6-header{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#shops-6-address{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#shops-6-image{
     border: 5px solid rgb(199, 181, 181);
 }
 
