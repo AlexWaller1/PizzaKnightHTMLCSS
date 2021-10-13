@@ -400,9 +400,7 @@
     border: 9px solid rgb(199, 181, 181);
 }
 
-#shops-button{
-    color:yellow;
-}
+
 
 #team-header{
     color:rgb(199, 181, 181);
@@ -439,6 +437,20 @@
     color: rgb(199, 181, 181);
     font-family: sans-serif;
     font-size: large;
+}
+
+#shops-5-header{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#shops-5-address{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+}
+
+#shops-5-image{
+    border: 5px solid rgb(199, 181, 181);
 }
 
 body{
