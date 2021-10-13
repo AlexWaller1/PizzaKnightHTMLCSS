@@ -435,6 +435,12 @@
     border: 9px solid rgb(199, 181, 181);
 }
 
+#team-footer{
+    color: rgb(199, 181, 181);
+    font-family: sans-serif;
+    font-size: large;
+}
+
 body{
     background: rgb(134, 56, 56)
 }
