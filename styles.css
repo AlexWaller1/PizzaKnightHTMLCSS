@@ -400,6 +400,10 @@
     border: 9px solid rgb(199, 181, 181);
 }
 
+#shops-button{
+    color:yellow;
+}
+
 body{
     background: rgb(134, 56, 56)
 }
