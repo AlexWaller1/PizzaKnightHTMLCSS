@@ -1,95 +1,159 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Shops Page</title>
     <!-- links HTML page to CSS Styling-->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1 id="shops-header">Submit a Pizza Place</h1>
-    <div id="shops-links-div">
-        <a id="shops-main-link" href="index.html">Home Page</a>
-        <a id="shops-about-link" href="about.html">About</a>
-        <a id="shops-shops-link" href="shops.html">Submit a Pizza Place</a>
-        <a id="shops-homemade-link" href="homemade.html">Homemade Masterpieces</a>
-        <a id="shops-newsletter-link" href="newsletter.html">Pizza Knights Newsletter</a>
-        <a id="shops-pizza-art-link" href="pizza-art.html">Pizza Art</a>
-        <a id="shops-stories-link" href="pizza-stories.html">Pizza Stories</a>
-        <a id="shops-users-link" href="users.html">Members</a>
-        <a id="shops-team-link" href="team.html">Our Team</a>
-        <a id="shops-contact-link" href="contact.html">Contact Us</a>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pizza Navigation</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home </a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shops.html">Submit a Pizza Place <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="homemade.html">Homemade Masterpieces</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="newsletter.html">Newsletter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pizza-art.html">Art</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pizza-stories.html">Stories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="users.html">Members</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Our Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+           
+              
+      </nav>
 
-    </div>
+      <br>
+
+
     <div id="shops-intro">
-        <p id="shops-intro-paragraph">
-            Here is the page where you can submit your favorite Pizza Places. We highly encourage
-            you to submit any Pizza Place you believe is we should visit and celebrate for the 
-            astounding contributions that they make. It doesn't matter whether it is independent,
-            a chain, a whole in the wall, or a huge restaurant, Pizza is Pizza, and we are always 
-            looking for great Pizza Places.
-        </p>
+      <p id="shops-intro-paragraph">
+        Here is the page where you can submit your favorite Pizza Places. We
+        highly encourage you to submit any Pizza Place you believe is we should
+        visit and celebrate for the astounding contributions that they make. It
+        doesn't matter whether it is independent, a chain, a whole in the wall,
+        or a huge restaurant, Pizza is Pizza, and we are always looking for
+        great Pizza Places.
+      </p>
     </div>
     <div id="shops-form-div">
-        <form id="shops-form-1">
-            <div>
-                <label>Pizza Place Name:</label>
-                <input type="text" name="pizza-place-name">
+        <form>
+            <div class="form-group">
+              <label for="shop-name">Pizza Place Name</label>
+              <input type="text" class="form-control" id="shop-name" placeholder="Pizza Place Name">
             </div>
-            <div>
-                <label>Pizza Place Address:</label>
-                <input type="text" name="pizza-place-address">
+            <div class="form-group">
+              <label for="shop-address">Pizza Place Address</label>
+              <input type="text" class="form-control" id="shop-address" placeholder="Pizza Place Address">
             </div>
-            <div>
-                <label>Pizza Place Image:</label>
-                <input type="text" name="pizza-place-image">
+            <div class="form-group">
+                <label for="shop-image">Pizza Place Image</label>
+                <input type="text" class="form-control" id="shop-image" placeholder="Pizza Place Image">
             </div>
-            <div>
-                <label>Description:</label>
-                <input type="text" name="pizza-place-description">
-            </div>
-            <div>
-                <button id="shops-button">Submit Pizza Place</button>
-            </div>
-        </form>
-
-    </div>
-    <div id="shops-1">
-        <h2 id="shops-1-header">Francesco's</h2>
-        <h3 id="shops-1-address">422 US-22, Whitehouse Station, NJ 08889</h3>
-        <img id="shops-1-image" src="https://s3-media0.fl.yelpcdn.com/bphoto/df38zfaHC5LPBw8jzCyLNQ/l.jpg">
-
-    </div>
-    <div id="shops-2">
-        <h2 id="shops-2-header">Dominick's</h2>
-        <h3 id="shops-2-address">307 US-202 #206, Bridgewater Township, NJ 08807</h3>
-        <img id="shops-2-image" src="https://www.gannett-cdn.com/-mm-/6d46f0a03148c87ce3989a311abc6d55d0153ee9/c=0-302-3264-2146/local/-/media/2017/11/27/NJGroup/AsburyPark/636473763415761625-Dominick-s.jpg">
-
-    </div>
-    <div id="shops-3">
-        <h2 id="shops-3-header">Gallagher's</h2>
-        <h3 id="shops-3-address">330 Reid St, De Pere, WI 54115</h3>
-        <img id="shops-3-image" src="https://media-cdn.tripadvisor.com/media/photo-s/11/56/fc/95/de-pere-gallagher-s-pizza.jpg" alt="Pizza Image">
-
-    </div>
-    <div id="shops-4">
-        <h2 id="shops-4-header">Pizza Ranch</h2>
-        <h3 id="shops-4-address">502 E Norway Ave, Mitchell, SD 57301</h3>
-        <img id="shops-4-image" src="https://www.mitchellrepublic.com/incoming/6923594-es0m8k-030921.N.DR.PIZZARANCH.jpg/alternates/BASE_LANDSCAPE/030921.N.DR.PIZZARANCH.jpg" alt="Pizza Image">
-
-    </div>
-    <div id="shops-5">
-        <h2 id="shops-5-header">Il Forno</h2>
-        <h3 id="shops-5-address">1260 NJ-28, Branchburg, NJ 08876</h3>
-        <img id="shops-5-image" src="https://media-cdn.tripadvisor.com/media/photo-s/16/8c/89/14/dining-area.jpg" alt="Pizza Image">
-    </div>
-    <div id="shops-6">
-        <h2 id="shops-6-header">Cranky Pat's</h2>
-        <h3 id="shops-6-address">709 Bellevue St, Green Bay, WI 54302</h3>
-        <img id="shops-6-image" src="https://s3-media0.fl.yelpcdn.com/bphoto/v_BiEZ6CZzAkXcaPBhRskQ/l.jpg" alt="Pizza Image">
+          </form>
+          <button type="button" class="btn btn-dark">Submit Pizza Place</button>
     </div>
     <br>
+    <div id="shops-1">
+      <h2 id="shops-1-header">Francesco's</h2>
+      <h3 id="shops-1-address">422 US-22, Whitehouse Station, NJ 08889</h3>
+      <img
+        id="shops-1-image"
+        src="https://s3-media0.fl.yelpcdn.com/bphoto/df38zfaHC5LPBw8jzCyLNQ/l.jpg"
+      />
+    </div>
+    <div id="shops-2">
+      <h2 id="shops-2-header">Dominick's</h2>
+      <h3 id="shops-2-address">
+        307 US-202 #206, Bridgewater Township, NJ 08807
+      </h3>
+      <img
+        id="shops-2-image"
+        src="https://www.gannett-cdn.com/-mm-/6d46f0a03148c87ce3989a311abc6d55d0153ee9/c=0-302-3264-2146/local/-/media/2017/11/27/NJGroup/AsburyPark/636473763415761625-Dominick-s.jpg"
+      />
+    </div>
+    <div id="shops-3">
+      <h2 id="shops-3-header">Gallagher's</h2>
+      <h3 id="shops-3-address">330 Reid St, De Pere, WI 54115</h3>
+      <img
+        id="shops-3-image"
+        src="https://media-cdn.tripadvisor.com/media/photo-s/11/56/fc/95/de-pere-gallagher-s-pizza.jpg"
+        alt="Pizza Image"
+      />
+    </div>
+    <div id="shops-4">
+      <h2 id="shops-4-header">Pizza Ranch</h2>
+      <h3 id="shops-4-address">502 E Norway Ave, Mitchell, SD 57301</h3>
+      <img
+        id="shops-4-image"
+        src="https://www.mitchellrepublic.com/incoming/6923594-es0m8k-030921.N.DR.PIZZARANCH.jpg/alternates/BASE_LANDSCAPE/030921.N.DR.PIZZARANCH.jpg"
+        alt="Pizza Image"
+      />
+    </div>
+    <div id="shops-5">
+      <h2 id="shops-5-header">Il Forno</h2>
+      <h3 id="shops-5-address">1260 NJ-28, Branchburg, NJ 08876</h3>
+      <img
+        id="shops-5-image"
+        src="https://media-cdn.tripadvisor.com/media/photo-s/16/8c/89/14/dining-area.jpg"
+        alt="Pizza Image"
+      />
+    </div>
+    <div id="shops-6">
+      <h2 id="shops-6-header">Cranky Pat's</h2>
+      <h3 id="shops-6-address">709 Bellevue St, Green Bay, WI 54302</h3>
+      <img
+        id="shops-6-image"
+        src="https://s3-media0.fl.yelpcdn.com/bphoto/v_BiEZ6CZzAkXcaPBhRskQ/l.jpg"
+        alt="Pizza Image"
+      />
+    </div>
+    <br />
     <footer id="shops-footer">This is a footer. All Rights Reserved.</footer>
-</body>
+  </body>
 </html>

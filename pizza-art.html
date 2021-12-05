@@ -1,61 +1,108 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Art</title>
     <!-- This links HTML page to CSS stylesheets -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <h1 id="pizza-art-header">Pizza Art</h1>
-    <div id="pizza-art-link-div">
-        <a id="pizza-art-main-link" href="index.html">Home Page</a>
-        <a id="pizza-art-about-link" href="about.html">About</a>
-        <a id="pizza-art-shops-link" href="shops.html">Submit a Pizza Place</a>
-        <a id="pizza-art-homemade-link" href="homemade.html">Homemade Masterpieces</a>
-        <a id="pizza-art-newsletter-link" href="newsletter.html">Pizza Knights Newsletter</a>
-        <a id="pizza-art-pizza-art-link" href="pizza-art.html">Pizza Art</a>
-        <a id="pizza-art-stories-link" href="pizza-stories.html">Pizza Stories</a>
-        <a id="pizza-art-users-link" href="users.html">Members</a>
-        <a id="pizza-art-team-link" href="team.html">Our Team</a>
-        <a id="pizza-art-contact-link" href="contact.html">Contact Us</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pizza Navigation</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home </a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shops.html">Submit a Pizza Place</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="homemade.html">Homemade Masterpieces </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="newsletter.html">Newsletter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pizza-art.html">Art <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pizza-stories.html">Stories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="users.html">Members</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Our Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+           
+              
+      </nav>
 
-    </div>
+      <br>
+
     <div id="pizza-art-div-1">
-        <p>Here at Pizza Knights, we want to see the creativity that Pizza has inspired in you.
-        This is precisely why we created this page where everyone can share their Pizza inspired
-        art regardless of their skill level. When you submit your art, please also leave a short 
-        discription about your artwork and what inspired you to make it.</p>
-        <ol id="art-list-1">
-            <li>Make Sure It Is A JPG</li>
-            <li>GIFS Will Work Too</li>
-        </ol>
-        <!-- Ordered List is ordered by numbers -->
+      <p>
+        Here at Pizza Knights, we want to see the creativity that Pizza has
+        inspired in you. This is precisely why we created this page where
+        everyone can share their Pizza inspired art regardless of their skill
+        level. When you submit your art, please also leave a short discription
+        about your artwork and what inspired you to make it.
+      </p>
+      <ol id="art-list-1">
+        <li>Make Sure It Is A JPG</li>
+        <li>GIFS Will Work Too</li>
+      </ol>
+      <!-- Ordered List is ordered by numbers -->
     </div>
     <div id="art-form-div">
-        <form id="art-form-1">
-            <div>
-                <label>Artwork Name:</label>
-                <input type="text" name="artwork-name">
+        <form>
+            <div class="form-group">
+              <label for="image-name">Image Name:</label>
+              <input type="text" class="form-control" id="image-name" placeholder="image-name">
             </div>
-            <div>
-                <label>Image:</label>
-                <input type="text" name="artwork-image">
+            <div class="form-group">
+              <label for="image">Image</label>
+              <input type="text" class="form-control" id="image" placeholder="Image">
             </div>
-            <div>
-                <label>Description:</label>
-                <input type="text" name="artwork-description">
+            <div class="form-group">
+                <label for="image-description">Image Description</label>
+                <input type="text" class="form-control" id="image-description" placeholder="Image Description">
             </div>
-            <div>
-                <button id="pizza-art-button" type="submit">Submit Pizza Art</button>
-            </div>
-
-
-        </form>
-
+          </form>
+          <button type="button" class="btn btn-dark">Submit Your Pizza Art</button>
     </div>
-    <footer id="pizza-art-footer">This is a footer. All Rights Reserved.</footer>
-    
-</body>
+    </div>
+    <footer id="pizza-art-footer">
+      This is a footer. All Rights Reserved.
+    </footer>
+  </body>
 </html>

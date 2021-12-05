@@ -1,473 +1,541 @@
-#main-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#main-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#first-div{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#contact-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#footer-1{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#team-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#main-link-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#team-header-2 {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#about-header{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#pizza-stories-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#about-footer{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#pizza-art-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#first-about-paragraph{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#newsletter-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#shops-header{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#pizza-art-div-1 {
+  font-weight: 600;
 }
 
-#about-links-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#newsletter-form-div {
+  font-weight: 400;
 }
 
-#second-about-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#newsletter-paragraph-1 {
+  font-weight: 600;
 }
 
-#shops-intro{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#about-aside-div {
+  font-weight: 300;
 }
 
-#shops-links-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#homemade-list-1 {
+  font-weight: 600;
 }
 
-#shops-footer{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#first-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
+  font-weight: 600;
 }
 
-#shops-1-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    
+#footer-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#shops-1-address{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#main-link-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#shops-2-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    
+#about-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
 }
 
-#shops-2-address{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#about-footer {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
 }
 
-#shops-3-header{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    
+#first-about-paragraph {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
+  font-weight: 600;
 }
 
-#shops-3-address{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#shops-form-div {
+  font-weight: 600;
 }
 
-#shops-4-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    
+#shops-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#shops-4-address{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#homemade-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#homemade-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    
+#about-links-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#shops-1-image{
-    border: 5px solid rgb(199, 181, 181);
+#second-about-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
 }
 
-#shops-2-image{
-    border: 5px solid rgb(199, 181, 181);
+#shops-intro {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
+  font-weight: 600;
 }
 
-#shops-3-image{
-    border: 5px solid rgb(199, 181, 181);
+#shops-links-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#shops-4-image{
-    border: 5px solid rgb(199, 181, 181);
+#shops-footer {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#homemade-links-div{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#shops-1-header {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#homemade-paragraph-1{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#shops-1-address {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#homemade-footer{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#shops-2-header {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#newsletter-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#shops-2-address {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#newsletter-link-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#shops-3-header {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#newsletter-div-1{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#shops-3-address {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#newsletter-footer{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#shops-4-header {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#newsletter-div-2{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#shops-4-address {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#pizza-art-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#shops-1-image {
+  border: 5px solid rgb(199, 181, 181);
 }
 
-#pizza-art-link-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#shops-2-image {
+  border: 5px solid rgb(199, 181, 181);
 }
 
-#pizza-art-div-1{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#shops-3-image {
+  border: 5px solid rgb(199, 181, 181);
 }
 
-#pizza-art-footer{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#shops-4-image {
+  border: 5px solid rgb(199, 181, 181);
 }
 
-#pizza-stories-header{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#homemade-links-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#pizza-stories-links-div{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#homemade-paragraph-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
+  font-weight: 600;
 }
 
-#pizza-stories-div-1{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#homemade-footer {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#stories-footer{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#newsletter-link-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#story-1-header{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#newsletter-div-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
 }
 
-#pizza-story-text-1{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#newsletter-footer {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#stories-aside{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#newsletter-div-2 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#pizza-story-1-image{
-    border: 4px solid rgb(199, 181, 181);
+#pizza-art-link-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#story-2-header{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#pizza-art-div-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
 }
 
-#pizza-story-text-2{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#pizza-art-footer {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#users-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#pizza-stories-links-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#pizza-story-2-image{
-    border: 4px solid rgb(199, 181, 181);
+#pizza-stories-div-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
 }
 
-#users-links-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#stories-footer {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#users-name-1{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#story-1-header {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#users-location-1{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#pizza-story-text-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
+}
+
+#stories-aside {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
+}
+
+#pizza-story-1-image {
+  border: 4px solid rgb(199, 181, 181);
+}
 
+#story-2-header {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#users-image-1{
-    border: 4px solid rgb(199, 181, 181);
+#pizza-story-text-2 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
 }
 
-#users-name-2{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#users-header {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#users-location-2{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#pizza-story-2-image {
+  border: 4px solid rgb(199, 181, 181);
 }
 
-#users-image-2{
-    border: 4px solid rgb(199, 181, 181);
+#users-links-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#users-name-3{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#users-name-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#users-location-3{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#users-location-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#contact-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#users-image-1 {
+  border: 4px solid rgb(199, 181, 181);
 }
 
-#contact-links-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#users-name-2 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#pizza-contact-image-1{
-    border: 7px solid rgb(199, 181, 181);
+#users-location-2 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#contact-div-1{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#users-image-2 {
+  border: 4px solid rgb(199, 181, 181);
 }
 
-#contact-footer{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#users-name-3 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#homemade-list-1{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#users-location-3 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#newsletter-form-div{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#contact-links-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#homemade-div-2{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#pizza-contact-image-1 {
+  border: 7px solid rgb(199, 181, 181);
 }
 
-#shops-form-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#contact-div-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
 }
 
-#art-form-div{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#contact-footer {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#stories-form-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#homemade-list-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
 }
 
-#users-form-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#newsletter-form-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#contact-form-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#homemade-div-2 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#about-image-1{
-    border:9px solid rgb(199, 181, 181);
+#shops-form-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#pizza-image-1{
-    border: 9px solid rgb(199, 181, 181);
+#art-form-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
+#stories-form-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
+}
+
+#users-form-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
+}
 
+#contact-form-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
+}
 
-#team-header{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
+#about-image-1 {
+  border: 9px solid rgb(199, 181, 181);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#team-links-div{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#pizza-image-1 {
+  border: 9px solid rgb(199, 181, 181);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#team-div-1{
-    color:rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: x-large;
+#team-links-div {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#team-header-2{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#team-div-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: x-large;
 }
 
-#team-member-header-1{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#team-header-2 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#team-image-1{
-    border: 9px solid rgb(199, 181, 181);
+#team-member-header-1 {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#team-footer{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
-    font-size: large;
+#team-image-1 {
+  border: 9px solid rgb(199, 181, 181);
 }
 
-#shops-5-header{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#team-footer {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
+  font-size: large;
 }
 
-#shops-5-address{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#shops-5-header {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#shops-5-image{
-    border: 5px solid rgb(199, 181, 181);
+#shops-5-address {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#shops-6-header{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#shops-5-image {
+  border: 5px solid rgb(199, 181, 181);
 }
 
-#shops-6-address{
-    color: rgb(199, 181, 181);
-    font-family: sans-serif;
+#shops-6-header {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-#shops-6-image{
-    border: 5px solid rgb(199, 181, 181);
+#shops-6-address {
+  color: rgb(199, 181, 181);
+  font-family: sans-serif;
 }
 
-body{
-    background: rgb(134, 56, 56)
+#shops-6-image {
+  border: 5px solid rgb(199, 181, 181);
 }
 
+body {
+  background: rgb(136, 38, 38);
+}

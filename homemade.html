@@ -1,66 +1,111 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- links to CSS styling -->
-    <link rel="stylesheet" href="styles.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Homemade Pizza Masterpieces</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 id="homemade-header">Homemade Pizza Masterpieces</h1>
-    <div id="homemade-links-div">
-        <a id="homemade-main-link" href="index.html">Home Page</a>
-        <a id="homemade-about-link" href="about.html">About</a>
-        <a id="homemade-shops-link" href="shops.html">Submit a Pizza Place</a>
-        <a id="homemade-homemade-link" href="homemade.html">Homemade Masterpieces</a>
-        <a id="homemade-newsletter-link" href="newsletter.html">Pizza Knights Newsletter</a>
-        <a id="homemade-pizza-art-link" href="pizza-art.html">Pizza Art</a>
-        <a id="homemade-stories-link" href="pizza-stories.html">Pizza Stories</a>
-        <a id="homemade-users-link" href="users.html">Members</a>
-        <a id="homemade-team-link" href="team.html">Our Team</a>
-        <a id="homemade-contact-link" href="contact.html">Contact Us</a>
-    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pizza Navigation</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >Home </a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="shops.html">Submit a Pizza Place</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="homemade.html">Homemade Masterpieces <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="newsletter.html">Newsletter</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pizza-art.html">Art</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pizza-stories.html">Stories</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="users.html">Members</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Our Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+           
+              
+      </nav>
+
+      <br>
+
+
     <div id="homemade-div-1">
-        <p id="homemade-paragraph-1">
-            While Pizza Knights was founded to help spread the word about the many great Pizza
-            Places around the world, we are well aware that some of greatest pizza is made right 
-            in your own kitchen. We welcome you to share pictures, recipes, and any helpful tips 
-            that can help others bring in your great recipes and make them their own. We are sure
-            that there are many talented Pizza Makers here, so please do not hesitate to show off 
-            your skills.
-        </p>
-        <ul id="homemade-list-1">
-            <li>Share Recipes</li>
-            <li>Share Photos</li>
-            <li>Share Details About Your Process</li>
-            <li>Show Your Progress Over Time</li>
-        </ul>
-        <!-- Unordered List uses bullet points -->
+      <p id="homemade-paragraph-1">
+        While Pizza Knights was founded to help spread the word about the many
+        great Pizza Places around the world, we are well aware that some of
+        greatest pizza is made right in your own kitchen. We welcome you to
+        share pictures, recipes, and any helpful tips that can help others bring
+        in your great recipes and make them their own. We are sure that there
+        are many talented Pizza Makers here, so please do not hesitate to show
+        off your skills.
+      </p>
+      <ul id="homemade-list-1">
+        <li>Share Recipes</li>
+        <li>Share Photos</li>
+        <li>Share Details About Your Process</li>
+        <li>Show Your Progress Over Time</li>
+      </ul>
+      <!-- Unordered List uses bullet points -->
     </div>
     <div id="homemade-div-2">
-        <form action="process.php" method="POST">
-            <div>
-                <label>Pizza Name:</label>
-                <input type="text" name="pizza-name">
+        <form>
+            <div class="form-group">
+              <label for="recipe">Recipe</label>
+              <input type="text" class="form-control" id="recipe-name" placeholder="Recipe">
             </div>
-            <div>
-                <label>Recipe:</label>
-                <input type="text" name="recipe">
+            <div class="form-group">
+              <label for="details">Details About the Process</label>
+              <input type="text" class="form-control" id="details" placeholder="Process Details">
             </div>
-            <div>
-                <label>Summary:</label>
-                <input type="text" name="summary">
+            <div class="form-group">
+                <label for="pizza-image">Pizza Image</label>
+                <input type="text" class="form-control" id="pizza-image" placeholder="Pizza Image">
             </div>
-            <div>
-                <label>Pizza Image:</label>
-                <input type="text" name="pizza-image">
-            </div>
-            <div>
-                <button id="homemade-button" type="submit">Submit Your Pizza Masterpiece</button>
-            </div>
-        </form>
+          </form>
+          <button type="button" class="btn btn-dark">Submit Homemade Recipe</button>
     </div>
     <footer id="homemade-footer">This is a footer. All Rights Reserved.</footer>
-</body>
+  </body>
 </html>

@@ -1,38 +1,87 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Knights</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- This is comment in HTML-->
     <h1 id="main-header">Pizza Knights</h1>
-    <div id="main-link-div">
-     <a id="main-main-link" href="index.html">Home Page</a>   
-     <a id="main-first-link" href="about.html"> About</a>
-     <a id="second-main-link" href="shops.html"> Submit a Pizza Place</a>
-     <a id="third-main-link" href="homemade.html">Homemade Masterpieces</a>
-     <a id="fourth-main-link" href="newsletter.html">Pizza Knights Newsletter</a>
-     <a id="main-pizza-art-link" href="pizza-art.html">Pizza Art</a>
-     <a id="main-stories-link" href="pizza-stories.html">Pizza Stories</a>
-     <a id="main-users-link" href="users.html">Members</a>
-     <a id="main-team-link" href="team.html">Our Team</a>
-     <a id="main-contact-link" href="contact.html">Contact Us</a>
-     
-    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Pizza Navigation</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="shops.html">Submit a Pizza Place</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="homemade.html">Homemade Masterpieces</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="newsletter.html">Newsletter</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="pizza-art.html">Art</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="pizza-stories.html">Stories</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="users.html">Members</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="team.html">Our Team</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+         
+            
+    </nav>
+
+   <br>
     <div>
-        <p id="first-div">
-            Pizza Knights is a place where fellow warriors can share their favorite Pizza Places
-            from around the world. Please enter your favorite Pizza Places, and you can also
-            review and comment on your entries whether you entered them or another Pizza Knight
-            did.
-        </p>
+      <p id="first-div">
+        Pizza Knights is a place where fellow warriors can share their favorite
+        Pizza Places from around the world. Please enter your favorite Pizza
+        Places, and you can also review and comment on your entries whether you
+        entered them or another Pizza Knight did.
+      </p>
     </div>
-    <img id="pizza-image-1" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/19ab33c1-2525-4017-aae9-a1bbe910f04e/ddm52mt-8f5894d3-1bda-42d7-bb2c-16835660135a.jpg/v1/fill/w_1024,h_927,q_75,strp/pizzabox4_by_alexwaller_ddm52mt-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTI3IiwicGF0aCI6IlwvZlwvMTlhYjMzYzEtMjUyNS00MDE3LWFhZTktYTFiYmU5MTBmMDRlXC9kZG01Mm10LThmNTg5NGQzLTFiZGEtNDJkNy1iYjJjLTE2ODM1NjYwMTM1YS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.IrpaJoHrd-oqnMRZTYM6jK6wFSc-GKJCOyF14Gcn5pw" alt="pizza image">
-    <footer id="footer-1">
-        This is the footer. All Rights Reserved.
-    </footer>
-</body>
+    <img
+      id="pizza-image-1"
+      src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/19ab33c1-2525-4017-aae9-a1bbe910f04e/ddm52mt-8f5894d3-1bda-42d7-bb2c-16835660135a.jpg/v1/fill/w_1024,h_927,q_75,strp/pizzabox4_by_alexwaller_ddm52mt-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTI3IiwicGF0aCI6IlwvZlwvMTlhYjMzYzEtMjUyNS00MDE3LWFhZTktYTFiYmU5MTBmMDRlXC9kZG01Mm10LThmNTg5NGQzLTFiZGEtNDJkNy1iYjJjLTE2ODM1NjYwMTM1YS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.IrpaJoHrd-oqnMRZTYM6jK6wFSc-GKJCOyF14Gcn5pw"
+      alt="pizza image"
+    />
+    <footer id="footer-1">This is the footer. All Rights Reserved.</footer>
+  </body>
 </html>
