@@ -502,40 +502,21 @@
   border: 9px solid rgb(199, 181, 181);
 }
 
-#team-footer {
+body {
+  background: rgb(136, 38, 38);
+}
+
+#msg-1-shops {
   color: rgb(199, 181, 181);
-  font-family: sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
   font-size: large;
 }
 
-#shops-5-header {
+#shop-name-header {
   color: rgb(199, 181, 181);
-  font-family: sans-serif;
-}
-
-#shops-5-address {
-  color: rgb(199, 181, 181);
-  font-family: sans-serif;
-}
-
-#shops-5-image {
-  border: 5px solid rgb(199, 181, 181);
-}
-
-#shops-6-header {
-  color: rgb(199, 181, 181);
-  font-family: sans-serif;
-}
-
-#shops-6-address {
-  color: rgb(199, 181, 181);
-  font-family: sans-serif;
-}
-
-#shops-6-image {
-  border: 5px solid rgb(199, 181, 181);
-}
-
-body {
-  background: rgb(136, 38, 38);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
