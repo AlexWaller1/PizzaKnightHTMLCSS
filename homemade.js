@@ -40,6 +40,22 @@ function displayPizzas() {
     imageLi.height = 500;
     imageLi.width = 650;
     homeMadeList.appendChild(imageLi);
+    const recipeBreak = document.createElement("br");
+    homeMadeList.appendChild(recipeBreak);
+    const reciperBreak2 = document.createElement("br");
+    homeMadeList.appendChild(reciperBreak2);
+    //............................................
+    let deleteButton = document.createElement("button");
+    deleteButton.className = "homemade-delete-button";
+    deleteButton.innerHTML = "delete recipe";
+    homeMadeList.appendChild(deleteButton);
+    //....................................................
+    deleteButton.addEventListener("click", function () {
+      homeMadeList.removeChild(nameLi);
+      homeMadeList.removeChild(detailsLi);
+      homeMadeList.removeChild(imageLi);
+      homeMadeList.removeChild(deleteButton);
+    });
   }
 }
 
