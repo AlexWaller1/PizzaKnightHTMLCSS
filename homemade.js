@@ -19,11 +19,20 @@ function displayPizzas() {
   let i = 0;
   for (; i < homePizzas.length; i++) {
     const nameLi = document.createElement("h2");
+    nameLi.className = "homemade-name-header";
     nameLi.appendChild(
       document.createTextNode(`
-    ${homePizzas[i].name}`)
+    ${homePizzas[i].recipe}`)
     );
     homeMadeList.appendChild(nameLi);
+    //...........................................
+    const detailsLi = document.createElement("h3");
+    detailsLi.className = "homemade-details-header";
+    detailsLi.appendChild(
+      document.createTextNode(`
+    ${homePizzas[i].details}`)
+    );
+    homeMadeList.appendChild(detailsLi);
   }
 }
 
@@ -32,10 +41,12 @@ displayPizzas();
 homeMadeButton.addEventListener("click", onSubmit);
 
 function onSubmit(e) {
-  if (homeMadeName.ariaValueMax.trim() == "") {
+  if (homeMadeName.value.trim() == "") {
     msg1.innerHTML = "Please Fill Out All Fields";
   } else {
+    e.preventDefault();
     msg1.innerHTML = "Can't Wait To Try The Recipe!";
+    homeMadeList.innerHTML = "";
     let newPizza = {
       recipe: `${homeMadeName.value}`,
       details: `${homeMadeDetails.value}`,
@@ -43,6 +54,7 @@ function onSubmit(e) {
     };
     homePizzas.push(newPizza);
     console.log(homePizzas);
+    displayPizzas();
 
     homeMadeName.value = "";
     homeMadeDetails.value = "";

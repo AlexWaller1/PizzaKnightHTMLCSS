@@ -516,7 +516,27 @@ body {
   font-size: large;
 }
 
+#msg-1-homemade {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
+}
+
 .shop-name-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.homemade-name-header {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.homemade-details-header {
   color: rgb(199, 181, 181);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
