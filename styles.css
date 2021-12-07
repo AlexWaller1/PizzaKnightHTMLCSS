@@ -550,6 +550,10 @@ body {
   border: 9px solid rgb(199, 181, 181);
 }
 
+.homemade-image {
+  border: 9px solid rgb(199, 181, 181);
+}
+
 .delete-shop-button {
   background-color: rgb(39, 39, 41);
   border-radius: 8px;

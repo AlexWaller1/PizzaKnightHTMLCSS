@@ -33,6 +33,13 @@ function displayPizzas() {
     ${homePizzas[i].details}`)
     );
     homeMadeList.appendChild(detailsLi);
+    //............................................
+    const imageLi = document.createElement("img");
+    imageLi.className = "homemade-image";
+    imageLi.src = `${homePizzas[i].image}`;
+    imageLi.height = 500;
+    imageLi.width = 650;
+    homeMadeList.appendChild(imageLi);
   }
 }
 
