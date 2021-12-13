@@ -18,14 +18,15 @@ let count = 0;
 
 let data1 = localStorage.getItem("pizza-list");
 let data2 = JSON.parse(data1);
-let data3 = JSON.parse(count);
+let data3 = localStorage.getItem("count-persist");
+let data4 = JSON.parse(data3);
 
 if (data2 == null) {
   homePizzas = [];
   count = 0;
 } else {
   homePizzas = data2;
-  count = data3;
+  count = data4;
 }
 
 function displayPizzas() {
@@ -67,14 +68,24 @@ function displayPizzas() {
       homeMadeList.removeChild(detailsLi);
       homeMadeList.removeChild(imageLi);
       homeMadeList.removeChild(deleteButton);
+      let pizzaNum = pizza1.id - 1;
       console.log(homePizzas);
       homePizzas.splice(pizza1.id, 1);
-      console.log("after", homePizzas);
-      console.log("before", localStorage);
+
+      for (let i = 0; i < homePizzas.length; i++) {
+        if (homePizzas[i].id > pizzaNum) {
+          homePizzas[i].id = homePizzas[i].id - 1;
+        }
+      }
+
+      count = homePizzas.length;
       localStorage.removeItem("pizza-list");
-      console.log("after", localStorage);
+      localStorage.removeItem("count-persist");
+
       let parse1 = JSON.stringify(homePizzas);
       localStorage.setItem("pizza-list", parse1);
+      let parse2 = JSON.stringify(count);
+      localStorage.setItem("count-persist", parse2);
     });
   });
 }
@@ -94,7 +105,7 @@ function onSubmit(e) {
       recipe: `${homeMadeName.value}`,
       details: `${homeMadeDetails.value}`,
       image: `${homeMadeImage.value}`,
-      id: count++
+      id: count
     };
     homePizzas.push(newPizza);
     console.log(homePizzas);
@@ -102,7 +113,7 @@ function onSubmit(e) {
     let parsePizzas = JSON.stringify(homePizzas);
     console.log(parsePizzas);
     localStorage.setItem("pizza-list", parsePizzas);
-
+    count++;
     homeMadeName.value = "";
     homeMadeDetails.value = "";
     homeMadeImage.value = "";

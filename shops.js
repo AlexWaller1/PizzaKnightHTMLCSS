@@ -100,9 +100,7 @@ function displayShops() {
     });
   });
 }
-
 displayShops();
-
 submitShopButton.addEventListener("click", onSubmit);
 
 function onSubmit(e) {
@@ -115,7 +113,7 @@ function onSubmit(e) {
   } else {
     e.preventDefault();
     msg1.innerHTML = "Thanks For The Recommendation!";
-    // shopsList.innerHTML = "";
+    shopsList.innerHTML = "";
     let newElement = {
       name: `${shopNameInput.value}`,
       address: `${shopAddressInput.value}`,
@@ -134,5 +132,6 @@ function onSubmit(e) {
     console.log(parseCount);
     localStorage.setItem("persist-count", parseCount);
     console.log(localStorage);
+    displayShops();
   }
 }
