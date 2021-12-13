@@ -16,3 +16,24 @@ const pizzaArtMsg = document.getElementById("msg-1-art");
 let pizzaArt = [];
 
 let count = 0;
+
+console.log("--------------------------------------------------");
+console.log("------------------------------------------");
+
+artSubmitButton.addEventListener("click", onSubmit);
+
+function onSubmit(e) {
+  e.preventDefault();
+  let newPizzaArt = {
+    name: `${artName.value}`,
+    image: `${artImage.value}`,
+    description: `${artDescription.value}`,
+    id: count
+  };
+  pizzaArt.push(newPizzaArt);
+  count++;
+  console.log(pizzaArt);
+  artName.value = "";
+  artImage.value = "";
+  artDescription.value = "";
+}
