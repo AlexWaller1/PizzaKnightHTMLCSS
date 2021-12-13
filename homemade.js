@@ -14,15 +14,27 @@ const homeMadeList = document.getElementById("homemade-list");
 const msg1 = document.getElementById("msg-1-homemade");
 
 let homePizzas = [];
+let count = 0;
+
+let data1 = localStorage.getItem("pizza-list");
+let data2 = JSON.parse(data1);
+let data3 = JSON.parse(count);
+
+if (data2 == null) {
+  homePizzas = [];
+  count = 0;
+} else {
+  homePizzas = data2;
+  count = data3;
+}
 
 function displayPizzas() {
-  let i = 0;
-  for (; i < homePizzas.length; i++) {
+  homePizzas.forEach(function (pizza1) {
     const nameLi = document.createElement("h2");
     nameLi.className = "homemade-name-header";
     nameLi.appendChild(
       document.createTextNode(`
-    ${homePizzas[i].recipe}`)
+        ${pizza1.recipe}`)
     );
     homeMadeList.appendChild(nameLi);
     //...........................................
@@ -30,13 +42,13 @@ function displayPizzas() {
     detailsLi.className = "homemade-details-header";
     detailsLi.appendChild(
       document.createTextNode(`
-    ${homePizzas[i].details}`)
+        ${pizza1.details}`)
     );
     homeMadeList.appendChild(detailsLi);
     //............................................
     const imageLi = document.createElement("img");
     imageLi.className = "homemade-image";
-    imageLi.src = `${homePizzas[i].image}`;
+    imageLi.src = `${pizza1.image}`;
     imageLi.height = 500;
     imageLi.width = 650;
     homeMadeList.appendChild(imageLi);
@@ -55,8 +67,16 @@ function displayPizzas() {
       homeMadeList.removeChild(detailsLi);
       homeMadeList.removeChild(imageLi);
       homeMadeList.removeChild(deleteButton);
+      console.log(homePizzas);
+      homePizzas.splice(pizza1.id, 1);
+      console.log("after", homePizzas);
+      console.log("before", localStorage);
+      localStorage.removeItem("pizza-list");
+      console.log("after", localStorage);
+      let parse1 = JSON.stringify(homePizzas);
+      localStorage.setItem("pizza-list", parse1);
     });
-  }
+  });
 }
 
 displayPizzas();
@@ -73,14 +93,21 @@ function onSubmit(e) {
     let newPizza = {
       recipe: `${homeMadeName.value}`,
       details: `${homeMadeDetails.value}`,
-      image: `${homeMadeImage.value}`
+      image: `${homeMadeImage.value}`,
+      id: count++
     };
     homePizzas.push(newPizza);
     console.log(homePizzas);
     displayPizzas();
+    let parsePizzas = JSON.stringify(homePizzas);
+    console.log(parsePizzas);
+    localStorage.setItem("pizza-list", parsePizzas);
 
     homeMadeName.value = "";
     homeMadeDetails.value = "";
     homeMadeImage.value = "";
+
+    let parseCount = JSON.stringify(count);
+    localStorage.setItem("count-persist", parseCount);
   }
 }
