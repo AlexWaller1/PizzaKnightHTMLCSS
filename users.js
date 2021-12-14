@@ -50,9 +50,44 @@ function displayUsers() {
     const newImage = document.createElement("img");
     newImage.className = "class-user-image";
     newImage.src = pizza1.image;
-    newImage.width = 650;
-    newImage.height = 500;
-    usersList.append(newImage);
+    newImage.width = 600;
+    newImage.height = 600;
+    usersList.appendChild(newImage);
+    // break for good button placement
+    const userBreak1 = document.createElement("br");
+    usersList.appendChild(userBreak1);
+    const userBreak2 = document.createElement("br");
+    usersList.append(userBreak2);
+    // delete button for each user
+    const deleteButton = document.createElement("button");
+    deleteButton.className = "class-user-delete-btn";
+    deleteButton.innerHTML = "delete";
+    usersList.append(deleteButton);
+    // eventListener for delete button
+    deleteButton.addEventListener("click", function (e) {
+      e.preventDefault();
+      usersList.removeChild(newName);
+      usersList.removeChild(newLocation);
+      usersList.removeChild(newImage);
+      usersList.removeChild(deleteButton);
+
+      let pizzaNum = pizza1.id - 1;
+
+      pizzaUsers.splice(pizza1.id, 1);
+
+      for (let i = 0; i < pizzaUsers.length; i++) {
+        if (pizzaUsers[i].id > pizzaNum) {
+          pizzaUsers[i].id = pizzaUsers[i].id - 1;
+        }
+      }
+      localStorage.removeItem("users-db");
+      localStorage.removeItem("persist-count");
+      count = pizzaUsers.length;
+      let JSON1 = JSON.stringify(pizzaUsers);
+      let JSON2 = JSON.stringify(count);
+      localStorage.setItem("users-db", JSON1);
+      localStorage.setItem("persist-count", JSON2);
+    });
   });
 }
 displayUsers();

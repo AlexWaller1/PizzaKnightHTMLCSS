@@ -471,7 +471,17 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.class-user-name {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
 .pizza-art-description {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.class-user-location {
   color: rgb(199, 181, 181);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -481,6 +491,10 @@ body {
 }
 
 .homemade-image {
+  border: 9px solid rgb(199, 181, 181);
+}
+
+.class-user-image {
   border: 9px solid rgb(199, 181, 181);
 }
 
@@ -509,6 +523,14 @@ body {
 }
 
 .art-delete-btn {
+  background-color: rgb(39, 39, 41);
+  border-radius: 8px;
+  color: azure;
+  padding: 14px 40px;
+  margin-bottom: 25px;
+}
+
+.class-user-delete-btn {
   background-color: rgb(39, 39, 41);
   border-radius: 8px;
   color: azure;
