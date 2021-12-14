@@ -18,20 +18,31 @@ let pizzaArt = [];
 
 let count = 0;
 
+console.log("-----------------------------------------");
+console.log("--------------------------------------");
+
+let data1 = localStorage.getItem("art-list");
+let data2 = JSON.parse(data1);
+
+if (data2 == null) {
+  pizzaArt = [];
+} else {
+  pizzaArt = data2;
+}
+
 console.log("--------------------------------------------------");
 console.log("------------------------------------------");
 
 function pizzaArtGallery() {
   pizzaArt.forEach(function (pizza1) {
-    const nameHeader = document.createElement("h2");
-    nameHeader.className = "art-name-header";
-    nameHeader.appendChild(
-      document.createTextNode(`
-          ${pizza1.name}`)
-    );
-    pizzaArtList.appendChild(nameLi);
+    const nameH2 = document.createElement("h2");
+    nameH2.appendChild(document.createTextNode(`${pizza1.name}`));
+    pizzaArtList.appendChild(nameH2);
   });
+  console.log("hello");
 }
+
+pizzaArtGallery();
 
 console.log("------------------------------------------------");
 artSubmitButton.addEventListener("click", onSubmit);
@@ -50,6 +61,8 @@ function onSubmit(e) {
   artName.value = "";
   artImage.value = "";
   artDescription.value = "";
+  let parseArt = JSON.stringify(pizzaArt);
+  localStorage.setItem("art-list", parseArt);
+  pizzaArtList.innerHTML = "";
+  pizzaArtGallery();
 }
-
-pizzaArtGallery();
