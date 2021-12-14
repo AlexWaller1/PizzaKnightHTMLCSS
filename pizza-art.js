@@ -22,11 +22,15 @@ console.log("--------------------------------------");
 
 let data1 = localStorage.getItem("art-list");
 let data2 = JSON.parse(data1);
+let data3 = localStorage.getItem("persist-count");
+let data4 = JSON.parse(data3);
 
 if (data2 == null) {
   pizzaArt = [];
+  count = 0;
 } else {
   pizzaArt = data2;
+  count = data4;
 }
 
 console.log("--------------------------------------------------");
@@ -55,6 +59,21 @@ function pizzaArtGallery() {
     deleteButton.className = "art-delete-btn";
     deleteButton.innerHTML = "Delete";
     pizzaArtList.append(deleteButton);
+
+    deleteButton.addEventListener("click", function (e) {
+      pizzaArtList.removeChild(nameH2);
+      pizzaArtList.removeChild(newImage);
+      pizzaArtList.removeChild(newDescription);
+      pizzaArtList.removeChild(deleteButton);
+      localStorage.removeItem("art-list");
+      pizzaArt = [];
+      localStorage.removeItem("persist-count");
+      count = 0;
+      let JSON1 = JSON.stringify(pizzaArt);
+      let JSON2 = JSON.stringify(count);
+      localStorage.setItem("art-list", JSON1);
+      localStorage.setItem("persist-count", JSON2);
+    });
   });
 }
 
@@ -79,6 +98,8 @@ function onSubmit(e) {
   artDescription.value = "";
   let parseArt = JSON.stringify(pizzaArt);
   localStorage.setItem("art-list", parseArt);
+  let parseCount = JSON.stringify(count);
+  localStorage.setItem("persist-count", parseCount);
   pizzaArtList.innerHTML = "";
   pizzaArtGallery();
 }
