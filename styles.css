@@ -573,3 +573,15 @@ body {
 #homemade-button {
   margin-bottom: 25px;
 }
+
+#art-submit-btn {
+  margin-bottom: 25px;
+}
+
+.art-delete-btn {
+  background-color: rgb(39, 39, 41);
+  border-radius: 8px;
+  color: azure;
+  padding: 14px 40px;
+  margin-bottom: 25px;
+}

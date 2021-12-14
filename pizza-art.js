@@ -10,7 +10,6 @@ const artDescription = document.getElementById("art-description");
 const artSubmitButton = document.getElementById("art-submit-btn");
 
 const pizzaArtList = document.getElementById("pizza-art-list");
-console.log(pizzaArtList);
 
 const pizzaArtMsg = document.getElementById("msg-1-art");
 
@@ -35,11 +34,28 @@ console.log("------------------------------------------");
 
 function pizzaArtGallery() {
   pizzaArt.forEach(function (pizza1) {
+    // Create Header for Entry Name
     const nameH2 = document.createElement("h2");
     nameH2.appendChild(document.createTextNode(`${pizza1.name}`));
     pizzaArtList.appendChild(nameH2);
+    // Create Image for Entry Image
+    const newImage = document.createElement("img");
+    newImage.src = `${pizza1.image}`;
+    newImage.width = 650;
+    newImage.height = 500;
+    pizzaArtList.append(newImage);
+    // Create Header for Entry Description
+    const newDescription = document.createElement("h4");
+    newDescription.appendChild(
+      document.createTextNode(`${pizza1.description}`)
+    );
+    pizzaArtList.append(newDescription);
+    // delete button for each entry
+    let deleteButton = document.createElement("button");
+    deleteButton.className = "art-delete-btn";
+    deleteButton.innerHTML = "Delete";
+    pizzaArtList.append(deleteButton);
   });
-  console.log("hello");
 }
 
 pizzaArtGallery();
