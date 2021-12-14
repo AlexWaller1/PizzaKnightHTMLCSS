@@ -10,6 +10,7 @@ const artDescription = document.getElementById("art-description");
 const artSubmitButton = document.getElementById("art-submit-btn");
 
 const pizzaArtList = document.getElementById("pizza-art-list");
+console.log(pizzaArtList);
 
 const pizzaArtMsg = document.getElementById("msg-1-art");
 
@@ -20,6 +21,19 @@ let count = 0;
 console.log("--------------------------------------------------");
 console.log("------------------------------------------");
 
+function pizzaArtGallery() {
+  pizzaArt.forEach(function (pizza1) {
+    const nameHeader = document.createElement("h2");
+    nameHeader.className = "art-name-header";
+    nameHeader.appendChild(
+      document.createTextNode(`
+          ${pizza1.name}`)
+    );
+    pizzaArtList.appendChild(nameLi);
+  });
+}
+
+console.log("------------------------------------------------");
 artSubmitButton.addEventListener("click", onSubmit);
 
 function onSubmit(e) {
@@ -37,3 +51,5 @@ function onSubmit(e) {
   artImage.value = "";
   artDescription.value = "";
 }
+
+pizzaArtGallery();

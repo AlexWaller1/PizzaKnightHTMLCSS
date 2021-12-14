@@ -63,7 +63,8 @@ function displayPizzas() {
     deleteButton.innerHTML = "delete recipe";
     homeMadeList.appendChild(deleteButton);
     //....................................................
-    deleteButton.addEventListener("click", function () {
+    deleteButton.addEventListener("click", function (e) {
+      e.preventDefault();
       homeMadeList.removeChild(nameLi);
       homeMadeList.removeChild(detailsLi);
       homeMadeList.removeChild(imageLi);

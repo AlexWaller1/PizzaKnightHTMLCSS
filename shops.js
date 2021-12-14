@@ -66,7 +66,8 @@ function displayShops() {
     shopsList.appendChild(deleteShopButton);
 
     //...........................................................
-    deleteShopButton.addEventListener("click", function () {
+    deleteShopButton.addEventListener("click", function (e) {
+      e.preventDefault();
       shopsList.removeChild(nameLi);
       shopsList.removeChild(addressLi);
       shopsList.removeChild(imageLi);
