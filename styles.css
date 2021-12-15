@@ -476,6 +476,20 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.story-title {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.story-text {
+  color: rgb(199, 181, 181);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#story-submit-btn {
+  margin-bottom: 25px;
+}
+
 .pizza-art-description {
   color: rgb(199, 181, 181);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
