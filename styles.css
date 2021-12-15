@@ -506,6 +506,14 @@ body {
   margin-bottom: 25px;
 }
 
+.story-delete-button {
+  background-color: rgb(39, 39, 41);
+  border-radius: 8px;
+  color: azure;
+  padding: 14px 40px;
+  margin-bottom: 25px;
+}
+
 .homemade-delete-button {
   background-color: rgb(39, 39, 41);
   border-radius: 8px;
