@@ -63,6 +63,33 @@ function displayStories() {
     deleteButton.innerHTML = "delete";
     deleteButton.className = "story-delete-button";
     storiesList.append(deleteButton);
+    // delete button functionality
+    deleteButton.addEventListener("click", function (e) {
+      e.preventDefault();
+      storiesList.removeChild(newTitle);
+      storiesList.removeChild(newText);
+      storiesList.removeChild(newImage);
+      storiesList.removeChild(deleteButton);
+
+      let pizzaNum = pizza1.id - 1;
+
+      pizzaStories.splice(pizza1.id, 1);
+
+      for (let i = 0; i < pizzaStories.length; i++) {
+        if (pizzaStories[i].id > pizzaNum) {
+          pizzaStories[i].id = pizzaStories[i].id - 1;
+        }
+      }
+
+      count = pizzaStories.length;
+
+      localStorage.removeItem("story-list");
+      localStorage.removeItem("persist-count");
+      let JSON1 = JSON.stringify(pizzaStories);
+      let JSON2 = JSON.stringify(count);
+      localStorage.setItem("story-list", JSON1);
+      localStorage.setItem("persist-count", JSON2);
+    });
   });
 }
 
