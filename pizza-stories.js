@@ -100,26 +100,32 @@ console.log("-----------------------------------------------------");
 storySubmitBtn.addEventListener("click", onSubmit);
 
 function onSubmit(e) {
-  e.preventDefault();
-  let newStory = {
-    title: `${storyTitle.value}`,
-    text: `${storyText.value}`,
-    image: `${storyImage.value}`,
-    id: count
-  };
-  pizzaStories.push(newStory);
-  console.log(pizzaStories);
-  count++;
+  if (storyTitle.value.trim() == "") {
+    e.preventDefault();
+    storyMsg.innerHTML = "We At Least Need A Title!";
+  } else {
+    e.preventDefault();
+    storyMsg.innerHTML = "Thanks For The Story!";
+    let newStory = {
+      title: `${storyTitle.value}`,
+      text: `${storyText.value}`,
+      image: `${storyImage.value}`,
+      id: count
+    };
+    pizzaStories.push(newStory);
+    console.log(pizzaStories);
+    count++;
 
-  let parseStory = JSON.stringify(pizzaStories);
-  let parseCount = JSON.stringify(count);
-  localStorage.setItem("story-list", parseStory);
-  localStorage.setItem("persist-count", parseCount);
+    let parseStory = JSON.stringify(pizzaStories);
+    let parseCount = JSON.stringify(count);
+    localStorage.setItem("story-list", parseStory);
+    localStorage.setItem("persist-count", parseCount);
 
-  storiesList.innerHTML = "";
-  displayStories();
+    storiesList.innerHTML = "";
+    displayStories();
 
-  storyTitle.value = "";
-  storyText.value = "";
-  storyImage.value = "";
+    storyTitle.value = "";
+    storyText.value = "";
+    storyImage.value = "";
+  }
 }

@@ -13,6 +13,10 @@ const pizzaArtList = document.getElementById("pizza-art-list");
 
 const pizzaArtMsg = document.getElementById("msg-1-art");
 
+const editPizzaList = document.getElementById("edit-pizza-list");
+
+const artFormDiv = document.getElementById("art-form-div");
+
 let pizzaArt = [];
 
 let count = 0;
@@ -39,7 +43,7 @@ console.log("------------------------------------------");
 function pizzaArtGallery() {
   pizzaArt.forEach(function (pizza1) {
     // Create Header for Entry Name
-    const nameH2 = document.createElement("h2");
+    let nameH2 = document.createElement("h2");
     nameH2.className = "pizza-art-header";
     nameH2.appendChild(document.createTextNode(`${pizza1.name}`));
     pizzaArtList.appendChild(nameH2);
@@ -51,7 +55,7 @@ function pizzaArtGallery() {
     newImage.className = "pizza-art-gallery";
     pizzaArtList.append(newImage);
     // Create Header for Entry Description
-    const newDescription = document.createElement("h4");
+    let newDescription = document.createElement("h4");
     newDescription.className = "pizza-art-description";
     newDescription.appendChild(
       document.createTextNode(`${pizza1.description}`)
@@ -88,6 +92,43 @@ function pizzaArtGallery() {
       let JSON2 = JSON.stringify(count);
       localStorage.setItem("art-list", JSON1);
       localStorage.setItem("persist-count", JSON2);
+    });
+    // making an edit button
+    const editButton = document.createElement("button");
+    editButton.innerHTML = "Edit";
+    editButton.className = "art-edit-btn";
+    pizzaArtList.append(editButton);
+
+    const artUpdateBtn = document.createElement("button");
+
+    editButton.addEventListener("click", function (e) {
+      artName.value = `${pizza1.name}`;
+      artImage.value = `${pizza1.image}`;
+      artDescription.value = `${pizza1.description}`;
+      artFormDiv.removeChild(artSubmitButton);
+
+      artUpdateBtn.innerHTML = "Update Entry";
+      artUpdateBtn.className = "art-update-btn";
+      artFormDiv.append(artUpdateBtn);
+
+      // count = pizza1.id;
+    });
+
+    artUpdateBtn.addEventListener("click", function () {
+      pizza1.name = `${artName.value}`;
+      nameH2.innerHTML = `${pizza1.name}`;
+      pizza1.image = `${artImage.value}`;
+      newImage.src = `${pizza1.image}`;
+      pizza1.description = `${artDescription.value}`;
+      newDescription.innerHTML = `${pizza1.description}`;
+      artFormDiv.removeChild(artUpdateBtn);
+      artFormDiv.append(artSubmitButton);
+      localStorage.removeItem("art-list");
+      let JSON5 = JSON.stringify(pizzaArt);
+      localStorage.setItem("art-list", JSON5);
+      artName.value = "";
+      artImage.value = "";
+      artDescription.value = "";
     });
   });
 }
