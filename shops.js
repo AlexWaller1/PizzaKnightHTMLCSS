@@ -29,6 +29,8 @@ const submitShopButton = document.getElementById("shops-button");
 
 const msg1 = document.getElementById("msg-1-shops");
 
+const shopsFormDiv = document.getElementById("shops-form-div");
+
 console.log("--------------------------------------------------");
 console.log("------------------------------------------------");
 function displayShops() {
@@ -64,7 +66,12 @@ function displayShops() {
     deleteShopButton.innerHTML = "Delete Shop";
     deleteShopButton.className = "delete-shop-button";
     shopsList.appendChild(deleteShopButton);
-
+    //..............................................................
+    // creating edit button
+    const shopEditBtn = document.createElement("button");
+    shopEditBtn.innerHTML = "edit";
+    shopEditBtn.className = "shop-edit-btn";
+    shopsList.append(shopEditBtn);
     //...........................................................
     deleteShopButton.addEventListener("click", function (e) {
       e.preventDefault();
@@ -72,6 +79,7 @@ function displayShops() {
       shopsList.removeChild(addressLi);
       shopsList.removeChild(imageLi);
       shopsList.removeChild(deleteShopButton);
+      shopsList.removeChild(shopEditBtn);
       // lets say we are deleting the 3rd item in a 5 element array
       // so we're deleting pizzaPlaces[2]
       // the id of pizzaPlaces[2] is 2
@@ -99,17 +107,42 @@ function displayShops() {
       let JSON2 = JSON.stringify(count);
       localStorage.setItem("persist-count", JSON2);
     });
+
+    // creating update button for edit button event listener
+    const shopUpdateBtn = document.createElement("button");
+    shopUpdateBtn.innerHTML = "Update Pizza Place";
+    shopUpdateBtn.className = "shop-update-btn";
+    // adding edit button functionality
+    shopEditBtn.addEventListener("click", function () {
+      shopNameInput.value = `${pizza1.name}`;
+      shopAddressInput.value = `${pizza1.address}`;
+      shopImageInput.value = `${pizza1.image}`;
+      shopsFormDiv.removeChild(submitShopButton);
+      shopsFormDiv.append(shopUpdateBtn);
+    });
+    // adding event listener for update button
+    shopUpdateBtn.addEventListener("click", function () {
+      pizza1.name = shopNameInput.value;
+      nameLi.innerHTML = pizza1.name;
+      pizza1.address = shopAddressInput.value;
+      addressLi.innerHTML = pizza1.address;
+      pizza1.image = shopImageInput.value;
+      imageLi.src = pizza1.image;
+      // setting revised array to local storage
+      localStorage.removeItem("shops-list");
+      let JSON5 = JSON.stringify(pizzaPlaces);
+      localStorage.setItem("shops-list", JSON5);
+      shopNameInput.value = "";
+      shopAddressInput.value = "";
+      shopImageInput.value = "";
+    });
   });
 }
 displayShops();
 submitShopButton.addEventListener("click", onSubmit);
 
 function onSubmit(e) {
-  if (
-    shopNameInput.value.trim() == "" ||
-    shopAddressInput.value.trim() == "" ||
-    shopImageInput.value.trim() == ""
-  ) {
+  if (shopNameInput.value.trim() == "" || shopAddressInput.value.trim() == "") {
     msg1.innerHTML = "Please Enter All Fields";
   } else {
     e.preventDefault();
