@@ -132,6 +132,8 @@ function displayShops() {
       localStorage.removeItem("shops-list");
       let JSON5 = JSON.stringify(pizzaPlaces);
       localStorage.setItem("shops-list", JSON5);
+      shopsFormDiv.removeChild(shopUpdateBtn);
+      shopsFormDiv.append(submitShopButton);
       shopNameInput.value = "";
       shopAddressInput.value = "";
       shopImageInput.value = "";

@@ -115,12 +115,12 @@ function pizzaArtGallery() {
     });
 
     artUpdateBtn.addEventListener("click", function () {
-      pizza1.name = `${artName.value}`;
-      nameH2.innerHTML = `${pizza1.name}`;
-      pizza1.image = `${artImage.value}`;
-      newImage.src = `${pizza1.image}`;
-      pizza1.description = `${artDescription.value}`;
-      newDescription.innerHTML = `${pizza1.description}`;
+      pizza1.name = artName.value;
+      nameH2.innerHTML = pizza1.name;
+      pizza1.image = artImage.value;
+      newImage.src = pizza1.image;
+      pizza1.description = artDescription.value;
+      newDescription.innerHTML = pizza1.description;
       artFormDiv.removeChild(artUpdateBtn);
       artFormDiv.append(artSubmitButton);
       localStorage.removeItem("art-list");
