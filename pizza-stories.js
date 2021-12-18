@@ -13,6 +13,8 @@ const storyMsg = document.getElementById("msg-1-story");
 
 const storiesList = document.getElementById("stories-list");
 
+const storiesFormDiv = document.getElementById("stories-form-div");
+
 console.log("---------------------------------------------------------");
 console.log("------------------------------------------------------------");
 
@@ -63,6 +65,11 @@ function displayStories() {
     deleteButton.innerHTML = "delete";
     deleteButton.className = "story-delete-button";
     storiesList.append(deleteButton);
+    // edit button for each entry
+    const editStoryBtn = document.createElement("button");
+    editStoryBtn.className = "edit-story-btn";
+    editStoryBtn.innerHTML = "edit";
+    storiesList.append(editStoryBtn);
     // delete button functionality
     deleteButton.addEventListener("click", function (e) {
       e.preventDefault();
@@ -89,6 +96,18 @@ function displayStories() {
       let JSON2 = JSON.stringify(count);
       localStorage.setItem("story-list", JSON1);
       localStorage.setItem("persist-count", JSON2);
+    });
+    // create update button
+    const updateStoryBtn = document.createElement("button");
+    updateStoryBtn.innerHTML = "Update Story";
+    updateStoryBtn.className = "update-story-btn";
+    // edit button functionality
+    editStoryBtn.addEventListener("click", function () {
+      storyTitle.value = pizza1.title;
+      storyText.value = pizza1.text;
+      storyImage.value = pizza1.image;
+      storiesFormDiv.removeChild(storySubmitBtn);
+      storiesFormDiv.append(updateStoryBtn);
     });
   });
 }
