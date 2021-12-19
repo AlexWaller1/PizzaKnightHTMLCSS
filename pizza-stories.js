@@ -51,7 +51,7 @@ function displayStories() {
     // image for story
     const newImage = document.createElement("img");
     newImage.className = "story-image";
-    newImage.src = `${pizza1.image}`;
+    newImage.src = pizza1.image;
     newImage.width = 650;
     newImage.height = 500;
     storiesList.append(newImage);
@@ -108,6 +108,23 @@ function displayStories() {
       storyImage.value = pizza1.image;
       storiesFormDiv.removeChild(storySubmitBtn);
       storiesFormDiv.append(updateStoryBtn);
+    });
+    // update button functionality
+    updateStoryBtn.addEventListener("click", function () {
+      pizza1.title = storyTitle.value;
+      newTitle.innerHTML = pizza1.title;
+      pizza1.text = storyText.value;
+      newText.innerHTML = pizza1.text;
+      pizza1.image = storyImage.value;
+      newImage.src = pizza1.story;
+      storiesFormDiv.removeChild(updateStoryBtn);
+      storiesFormDiv.append(storySubmitBtn);
+      localStorage.removeItem("story-list");
+      let JSON5 = JSON.stringify(pizzaStories);
+      localStorage.setItem("story-list", JSON5);
+      storyTitle.value = "";
+      storyText.value = "";
+      storyImage.value = "";
     });
   });
 }
