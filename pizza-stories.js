@@ -77,6 +77,7 @@ function displayStories() {
       storiesList.removeChild(newText);
       storiesList.removeChild(newImage);
       storiesList.removeChild(deleteButton);
+      storiesList.removeChild(editStoryBtn);
 
       let pizzaNum = pizza1.id - 1;
 

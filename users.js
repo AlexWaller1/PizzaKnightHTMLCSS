@@ -13,6 +13,8 @@ const usersMsg = document.getElementById("mag-1-users");
 
 const usersList = document.getElementById("users-list");
 
+const usersFormDiv = document.getElementById("users-form-div");
+
 console.log("---------------------------------------------");
 
 let pizzaUsers = [];
@@ -63,6 +65,11 @@ function displayUsers() {
     deleteButton.className = "class-user-delete-btn";
     deleteButton.innerHTML = "delete";
     usersList.append(deleteButton);
+    // edit button for each user
+    const editUserBtn = document.createElement("button");
+    editUserBtn.innerHTML = "edit";
+    editUserBtn.className = "user-edit-btn";
+    usersList.append(editUserBtn);
     // eventListener for delete button
     deleteButton.addEventListener("click", function (e) {
       e.preventDefault();
@@ -70,6 +77,7 @@ function displayUsers() {
       usersList.removeChild(newLocation);
       usersList.removeChild(newImage);
       usersList.removeChild(deleteButton);
+      usersList.removeChild(editUserBtn);
 
       let pizzaNum = pizza1.id - 1;
 
@@ -87,6 +95,40 @@ function displayUsers() {
       let JSON2 = JSON.stringify(count);
       localStorage.setItem("users-db", JSON1);
       localStorage.setItem("persist-count", JSON2);
+    });
+    // creating update button
+    const userUpdateBtn = document.createElement("button");
+    userUpdateBtn.innerHTML = "update user";
+    userUpdateBtn.className = "user-update-btn";
+    // adding functionality for edit button
+    editUserBtn.addEventListener("click", function () {
+      userName.value = pizza1.name;
+      userLocation.value = pizza1.location;
+      userImage.value = pizza1.image;
+      usersFormDiv.removeChild(userSubmitBtn);
+      usersFormDiv.append(userUpdateBtn);
+    });
+    // adding functionality to update button
+    userUpdateBtn.addEventListener("click", function () {
+      // have to use forEach object pizza1 and its properties to actually change
+      // the array elements properties, if we just change innerHTML of HTML elements
+      // nothing ever actually changes in our array and changes won't be persisted
+      pizza1.name = userName.value;
+      newName.innerHTML = pizza1.name;
+      pizza1.location = userLocation.value;
+      newLocation.innerHTML = pizza1.location;
+      pizza1.image = userImage.value;
+      newImage.src = pizza1.image;
+      // sending modified array to localStorage
+      localStorage.removeItem("users-db");
+      let JSON5 = JSON.stringify(pizzaUsers);
+      localStorage.setItem("users-db", JSON5);
+      // resetting UI for user
+      usersFormDiv.removeChild(userUpdateBtn);
+      usersFormDiv.append(userSubmitBtn);
+      userName.value = "";
+      userLocation.value = "";
+      userImage.value = "";
     });
   });
 }

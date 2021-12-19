@@ -601,6 +601,25 @@ body {
   color: azure;
   padding: 14px 40px;
   margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.user-update-btn {
+  background-color: rgb(39, 39, 41);
+  border-radius: 8px;
+  color: azure;
+  padding: 14px 40px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.user-edit-btn {
+  background-color: rgb(39, 39, 41);
+  border-radius: 8px;
+  color: azure;
+  padding: 14px 40px;
+  margin-bottom: 25px;
+  margin-right: 25px;
 }
 
 .art-edit-btn {
